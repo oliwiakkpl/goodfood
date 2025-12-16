@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">    
+<head>
+    <meta charset="utf-8">
+    <title>goodfood-o nas</title>
+    <link rel="stylesheet" href="style_o_nas.css">
+</head>
+<body>
+    <header>
+        <h4>goodfood</h4>
+        <a class="cofnij" href="strona_glowna.html">←</a>
+        <h1>o nas</h1>
+    </header>
+    <main>
+        <div class="t1">
+            <p>
+                stworzyłyśmy tą stronę dla wszystkich osób chcących poznać Kraków z innej perspektywy. 
+                przedstawiamy tutaj miejsca, które uwielbiamy oraz te, które polecają nam znajomi z dobrym gustem. 
+                można też wysłać do restauracje czy kawiarnie, wartą odwiedzenia i po sprawdzeniu jej przez nas możemy ją dodać na stronę. 
+                doceniamy miejsca, które mogą wydawać się niepozorne z zewnątrz jak i te powszechnie znane i polecane (widocznie nie bez powodu). 
+            </p>
+            <a class="kliknij" href="#">czytaj więcej...</a>
+            <p class="wiecej">
+                włożyłysmy duzo pracy w ten projekt. 
+                zaczynając od wymyślenia nazwy czy samej koncepcji o czym ma być nasza strona.
+                obie uwielbiamy zjeśc dobre jedzenie, więc chciałyśmy się podzielić paroma naszymi ulunionymi miejcami w Krakowie.
+                nazwę strony wymyśliłyśmy w nawiązaniu do krakowskiej sieci lodziarni Good Lood, która sprzedaje rzemieślnicze lody (bardzo dobre z resztą).
+                chciałyśmy, żeby własnie cała strona nawiązywała przynajmniej odrobinę do Krakowa.
+                wszystkie nasze podstrony są bardzo kolorowe, żeby miło się na nie patrzyło i nie były nudne.
+                na dole tej strony zamieściłyśmy zdjęcia, które same zrobiłyśmy, jedzenia z polecanych przez nas miejsc, bo nie były one przypadkowo wybrane.
+                projekty makiet zrobiłyśmy w canvie, kod pisałyśmy w visual studio code i współpracowałyśmy poprzez wspólne repozytorium na gihubie.
+            </p>
+        </div>
+        <div class="t2">
+            <p>
+                zachęcamy do odwiedzenia którejkolwiek z poleconej przez nas lokalizacji
+                pozdrawiają oliwia kamińska i oliwia konarska 
+            </p>
+        </div>
+        <h2>we love food</h2>
+        <div class="galeria">
+            <div class="obraz">
+            <img src="zdj1.jpg" alt="Piecyk na okrąglaku"><br>
+            <span>zapiekanki w Piecyk na okrąglaku</span>
+            <figcaption><a href="#">odwiedź to miejsce!</a></figcaption>
+            </div>
+            <div class="obraz">
+            <img src="zdj2.jpg" alt="Roll & Go Sushi"><br>
+            <span>zestaw miesiąca za 50zł! w Roll & Go Sushi</span>
+            <figcaption><a href="#">odwiedź to miejsce!</a></figcaption>
+            </div>
+            <div class="obraz">
+            <img src="zdj3.jpg" alt="Hevre"><br>
+            <span>sezonowe menu w Hevre</span>
+            <figcaption><a href="#">odwiedź to miejsce!</a></figcaption>
+            </div>
+            <div class="obraz">
+            <img src="zdj4.jpg" alt="Hanguk Bistro Korean Bowl"><br>
+            <span>bulgogi chicken bowl w Hanguk Bistro Korean Bowl</span>
+            <figcaption><a href="#">odwiedź to miejsce!</a></figcaption>
+            </div>
+            <div class="obraz">
+            <img src="zdj4.jpg" alt="Hanguk Bistro Korean Bowl"><br>
+            <span>bulgogi chicken bowl w Hanguk Bistro Korean Bowl</span>
+            <figcaption><a href="#">odwiedź to miejsce!</a></figcaption>
+            </div>
+            <div class="obraz">
+            <img src="zdj4.jpg" alt="Hanguk Bistro Korean Bowl"><br>
+            <span>bulgogi chicken bowl w Hanguk Bistro Korean Bowl</span>
+            <figcaption><a href="#">odwiedź to miejsce!</a></figcaption>
+            </div>
+            <div class="obraz">
+            <img src="zdj4.jpg" alt="Hanguk Bistro Korean Bowl"><br>
+            <span>bulgogi chicken bowl w Hanguk Bistro Korean Bowl</span>
+            <figcaption><a href="#">odwiedź to miejsce!</a></figcaption>
+            </div>
+            <div class="obraz">
+            <img src="zdj4.jpg" alt="Hanguk Bistro Korean Bowl"><br>
+            <span>bulgogi chicken bowl w Hanguk Bistro Korean Bowl</span>
+            <figcaption><a href="#">odwiedź to miejsce!</a></figcaption>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy 2025 goodfood.pl</p>
+    </footer>
+</body>
+<script>
+    const kliknijLink = document.querySelector('.kliknij');
+    const wiecejTekstu = document.querySelector('.wiecej');
+    if (kliknijLink && wiecejTekstu) {
+        wiecejTekstu.classList.add('ukryty');
+        kliknijLink.addEventListener('click', function() {
+            wiecejTekstu.classList.toggle('ukryty'); 
+            if (wiecejTekstu.classList.contains('ukryty')) {
+                this.textContent = 'czytaj więcej...'; 
+            } else {
+                this.textContent = 'czytaj mniej...';
+            }
+        });
+    };
+</script>
+</html>

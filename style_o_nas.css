@@ -1,0 +1,138 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #6E91DD;
+    color: #31333F
+}
+
+header {
+    position: relative;
+}
+
+.cofnij {
+    position: absolute;
+    text-decoration: none;
+    color:#31333F;
+    font-size: 50px;
+    margin: 0;
+}
+
+h4 {
+    position: absolute;
+    left: 50%;
+    font-size: 10px;
+    font-weight: 800;
+    text-align: center;
+    color: #DC92B1;
+    margin: 0;
+}
+
+h1 {   
+    font-size: 100px;
+    font-weight: 800;
+    margin: 10px;
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 800;
+    margin: 10px;
+    color: #DC92B1;
+}
+
+.t1 {
+    background-color: #DC92B1;
+    color: #3A6929;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    max-width: 800px;
+    margin-left: auto;
+}
+
+.kliknij {
+    color: #3A6929;
+}
+
+.wiecej {
+    color:#3A6929;
+}
+
+.ukryty {
+    display: none;
+}
+
+.t2 {
+    background-color: #31333F;
+    color: #6E91DD;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    max-width: 800px;
+    margin-left: auto;
+}
+
+.galeria {
+    display: flex;
+    overflow-x: scroll; 
+    scrollbar-width: none;
+}
+
+.obraz {
+    max-width: 200px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    text-align: center;
+    color:#31333F;
+    position: relative;
+    flex-shrink: 0;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+figcaption {
+    display: none;
+    background-color: #3A6929;
+    border-radius: 8px;
+    opacity: 95%;
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    padding: 10px;
+}
+
+figcaption a {
+    color: #DC92B1;
+}
+
+footer {
+    color: #3A6929;
+}
+
+.cofnij:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+.obraz:hover {
+    transition: 0.4s;
+    transform: scale(1.1);
+}
+
+.obraz:hover figcaption {
+    display: block;
+}
+
+figcaption:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+figcaption a:hover {
+    color:#31333F;
+}
